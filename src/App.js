@@ -6,6 +6,7 @@ import React, { Component, useReducer } from 'react';
 import ComponentA from './components/ComponentA';
 import ComponentB from './components/ComponentB';
 import ComponentC from './components/ComponentC';
+import DataFetchingOne from './components/DataFetchingOne';
 export const CountContext = React.createContext()
 const initialState = 0
 const reducer = (state, action) => {
@@ -32,7 +33,8 @@ function App() {
         count-{count}
         <ComponentA/>
         <ComponentB />
-        <ComponentC />
+        <ComponentC /><br/>
+        <DataFetchingOne/>
       </div>
     </CountContext.Provider>
   );
